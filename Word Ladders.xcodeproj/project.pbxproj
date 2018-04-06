@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		250C51F720641C750089E358 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250C51F620641C750089E358 /* main.cpp */; };
+		250C51F720641C750089E358 /* wordladders.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 250C51F620641C750089E358 /* wordladders.cpp */; };
+		250C5203206420200089E358 /* exceptions.cc in Sources */ = {isa = PBXBuildFile; fileRef = 250C5202206420200089E358 /* exceptions.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,13 @@
 
 /* Begin PBXFileReference section */
 		250C51F320641C750089E358 /* Word Ladders */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Word Ladders"; sourceTree = BUILT_PRODUCTS_DIR; };
-		250C51F620641C750089E358 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		250C51F620641C750089E358 /* wordladders.cpp */ = {isa = PBXFileReference; indentWidth = 3; lastKnownFileType = sourcecode.cpp.cpp; path = wordladders.cpp; sourceTree = "<group>"; tabWidth = 3; };
+		250C520020641CC60089E358 /* wordladders.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = wordladders.h; sourceTree = "<group>"; };
+		250C520120641EE20089E358 /* linearlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = linearlist.h; sourceTree = "<group>"; };
+		250C5202206420200089E358 /* exceptions.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = exceptions.cc; sourceTree = "<group>"; };
+		250C5204206420290089E358 /* exceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exceptions.h; sourceTree = "<group>"; };
+		250C5205206427F10089E358 /* sgb-words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sgb-words.txt"; sourceTree = "<group>"; };
+		254B95962067FCC80040F1A8 /* queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = queue.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +64,39 @@
 		250C51F520641C750089E358 /* Word Ladders */ = {
 			isa = PBXGroup;
 			children = (
-				250C51F620641C750089E358 /* main.cpp */,
+				250C5205206427F10089E358 /* sgb-words.txt */,
+				250C51FF20641C9C0089E358 /* include */,
+				250C51FE20641C990089E358 /* src */,
+				250C51FD20641C960089E358 /* lib */,
 			);
 			path = "Word Ladders";
+			sourceTree = "<group>";
+		};
+		250C51FD20641C960089E358 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		250C51FE20641C990089E358 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				250C5202206420200089E358 /* exceptions.cc */,
+				250C51F620641C750089E358 /* wordladders.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		250C51FF20641C9C0089E358 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				250C5204206420290089E358 /* exceptions.h */,
+				250C520120641EE20089E358 /* linearlist.h */,
+				254B95962067FCC80040F1A8 /* queue.h */,
+				250C520020641CC60089E358 /* wordladders.h */,
+			);
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +156,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				250C51F720641C750089E358 /* main.cpp in Sources */,
+				250C51F720641C750089E358 /* wordladders.cpp in Sources */,
+				250C5203206420200089E358 /* exceptions.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
